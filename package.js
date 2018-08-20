@@ -1,19 +1,12 @@
 Package.describe({
   name: "lef:alerts",
-  version: "2.0.0",
+  version: "2.1.0",
   summary: "Basic alert system using Bootstrap 4 and React."
 });
 
 Package.onUse(api => {
-  api.use([
-    "coffeescript",
-    "ecmascript",
-    "mongo",
-    "check",
-    "react-meteor-data",
-    "lef:translations"
-  ]);
-  api.mainModule("alerts.coffee", "client");
+  api.use(["ecmascript", "mongo", "react-meteor-data"]);
+  api.mainModule("alerts.js", "client");
 });
 
 Npm.depends({
