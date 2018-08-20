@@ -7,10 +7,10 @@ import { Translate } from "meteor/lef:translations";
 
 AlertsCol = new Mongo.Collection(null);
 
-const Alert = ({ _id, color, msg, translate }) => {
+const Alert = ({ _id, type, msg, translate }) => {
   const dismiss = () => AlertsCol.remove(_id);
   return (
-    <Alertstrap isOpen={true} toggle={dismiss} color={color}>
+    <Alertstrap isOpen={true} toggle={dismiss} color={type}>
       {translate ? <Translate _id={translate} preventInPageEdit /> : msg}
     </Alertstrap>
   );
@@ -18,7 +18,7 @@ const Alert = ({ _id, color, msg, translate }) => {
 
 Alert.propTypes = {
   _id: PropTypes.string.isRequired,
-  color: PropTypes.oneOf([
+  type: PropTypes.oneOf([
     "primary",
     "secondary",
     "success",
