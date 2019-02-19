@@ -39,7 +39,7 @@ const Alert = ({ _id, type, msg, translate, icon }) => {
   const dismiss = () => AlertsCol.remove(_id)
   const getIcon = icon => (icon == 'auto' ? mapIcon(type) : icon)
   return (
-    <Alertstrap isOpen toggle={dismiss} color={type} fade={false}>
+    <Alertstrap isOpen toggle={dismiss} color={type}>
       {icon ? (
         <span className={'icon'}>
           <FontAwesomeIcon icon={getIcon(icon)} />{' '}
