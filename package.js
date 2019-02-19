@@ -1,6 +1,6 @@
 Package.describe({
   name: 'lef:alerts',
-  version: '2.1.2',
+  version: '2.2.0',
   summary: 'Basic alert system using Bootstrap 4 and React.'
 })
 
