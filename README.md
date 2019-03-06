@@ -14,9 +14,3 @@ NewAlert({ translate: "message", type: "success" })
 ## Bootstrap colors
 
 `"primary", "secondary", "success", "danger", "warning", "info", "light", "dark"`
-
-## Fontawesome icons
-
-_Note: you should install the Fontawesome dependencies yourself!_
-
-You can use any fontawesome icon that is globally registered or use one of the preregistered in the component: `'thumbs-up', 'exclamation-circle', 'exclamation-triangle', 'info', 'bell'`. You can also use `auto` as value for the prop icon to match the icon automatically with the type.
