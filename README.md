@@ -1,3 +1,5 @@
+This package is deprecated, for React projects please switch to: [react-alert](https://www.npmjs.com/package/react-alert)
+
 # Alerts
 
 Put the `<Alerts />` component somewhere sensible in your project. Use `msg` for text or `translate` for translations. `type` can be bootstrap colors. Optionally set `duration` (default = 10000ms). Set to `0` for endless.
